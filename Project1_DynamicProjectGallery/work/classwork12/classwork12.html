@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <script>
+        const student = {
+            name: "Hassain.shaik",
+            studying: "Masters",
+            year: "2025",
+            description: function() {
+                return "I am " + this.name + ", studying " + this.studying + " in the year " + this.year;
+            }
+        };
+
+        function show_student_info() {
+            document.getElementById("demo_div").innerHTML = student.description();
+        }
+    </script>
+</head>
+<body>
+    <div id="demo_div"></div>
+    <button onclick="show_student_info()">Show Student Info</button>
+    
+</body>
+</html>
+ 
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div>
+            <input id = "Name" placeholder="Enter Name"/>
+            <input id = "Studying" placeholder="Enter Studying"/>
+            <input id = "Year" placeholder="Enter Year"/>
+        </div>
+        <button onclick = "insert();">Insert Info</button>
+
+        <div id = "demo_div"></div>
+        <button onclick = "show_student_info();">Show Info</button>
+        <script src = "majs.js"></script>
+    </body>
+</html>
+
